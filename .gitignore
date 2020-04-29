@@ -1,0 +1,9 @@
+node_modules
+**/.env
+**/.env.*
+packages/client/.cache
+**/build
+*.d.ts
+packages/client/public
+packages/client/cypress/screenshots
+**/storybook-static
