@@ -1,0 +1,5 @@
+node_modules
+packages/client/.cache
+**/build
+*.d.ts
+packages/client/public
