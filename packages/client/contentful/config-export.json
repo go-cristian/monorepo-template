@@ -1,0 +1,7 @@
+{
+  "spaceId": "p6gpzoewuu19",
+  "includeDrafts": true,
+  "downloadAssets": true,
+  "exportDir": "contentful/export/",
+  "contentFile": "contentful1.json"
+}

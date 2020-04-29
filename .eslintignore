@@ -1,0 +1,30 @@
+################################################################################
+#
+# First things first; we need to ignore our built files. To achive this, we
+# have to do a bit of an ignore dance where we ignore everything, and then
+# specifically un-ignore the source code, configuration files, etc.
+#
+# First: ignore FILES (not folders!)
+/{packages,examples}/**/*.{js,jsx,ts,tsx}
+
+#
+# Now un-ignore source code, tests, configuration, etc
+!/{packages,examples}/*/{src,cypress,resources}/**
+
+!.eslintrc.js
+!/{packages,examples}/*/.eslintrc.js
+#
+# End of the ignore dance.
+#
+################################################################################
+
+# Regular eslintignore configuration follows.
+
+# ESLint automatically ignores node_modules _in the root_, so we only need to specify nested node_modules
+**/node_modules
+
+# Build artifacts
+**/dist
+**/public
+**/build
+**/storybook-static

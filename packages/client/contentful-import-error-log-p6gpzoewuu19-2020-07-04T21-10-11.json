@@ -1,0 +1,130 @@
+[
+  {
+    "ts": "2020-07-05T02:14:09.162Z",
+    "level": "error",
+    "error": {
+      "name": "AssetProcessingTimeout",
+      "message": "Asset is taking longer then expected to process.",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "p6gpzoewuu19"
+            }
+          },
+          "id": "5woMdcYBud7ZQLBv3I1Id4",
+          "type": "Asset",
+          "createdAt": "2020-07-05T01:52:34.819Z",
+          "updatedAt": "2020-07-05T02:10:36.635Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5lxEWyaYs4BDIaFqJRCZRR"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5lxEWyaYs4BDIaFqJRCZRR"
+            }
+          },
+          "publishedCounter": 0,
+          "version": 2
+        },
+        "fields": {
+          "title": {
+            "en-US": "mttr"
+          },
+          "file": {
+            "en-US": {
+              "upload": "https://images.ctfassets.net/cv1nrnzs2fkw/5woMdcYBud7ZQLBv3I1Id4/4c1bb67d9888764b639759d37f9b50f1/mttr.svg",
+              "fileName": "mttr.svg",
+              "contentType": "image/svg+xml"
+            }
+          }
+        }
+      },
+      "stacktrace": [
+        "AssetProcessingTimeout: Asset is taking longer then expected to process.",
+        "/usr/local/Cellar/contentful-cli/1.4.8/libexec/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:10131:23",
+        "runMicrotasks (<anonymous>)",
+        "processTicksAndRejections (internal/process/task_queues.js:97:5)"
+      ]
+    }
+  },
+  {
+    "ts": "2020-07-05T02:14:09.444Z",
+    "level": "error",
+    "error": {
+      "name": "AssetProcessingTimeout",
+      "message": "Asset is taking longer then expected to process.",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "p6gpzoewuu19"
+            }
+          },
+          "id": "4LsmPAoOkSGreYLHuJWmA8",
+          "type": "Asset",
+          "createdAt": "2020-07-05T01:52:34.794Z",
+          "updatedAt": "2020-07-05T02:10:36.567Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5lxEWyaYs4BDIaFqJRCZRR"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "5lxEWyaYs4BDIaFqJRCZRR"
+            }
+          },
+          "publishedCounter": 0,
+          "version": 2
+        },
+        "fields": {
+          "title": {
+            "en-US": "Pi"
+          },
+          "file": {
+            "en-US": {
+              "upload": "https://images.ctfassets.net/cv1nrnzs2fkw/4LsmPAoOkSGreYLHuJWmA8/cc56b4b1ab361c10675ab287614076a4/bridge.svg",
+              "fileName": "bridge.svg",
+              "contentType": "image/svg+xml"
+            }
+          }
+        }
+      },
+      "stacktrace": [
+        "AssetProcessingTimeout: Asset is taking longer then expected to process.",
+        "/usr/local/Cellar/contentful-cli/1.4.8/libexec/lib/node_modules/contentful-cli/node_modules/contentful-management/dist/contentful-management.node.js:10131:23",
+        "runMicrotasks (<anonymous>)",
+        "processTicksAndRejections (internal/process/task_queues.js:97:5)"
+      ]
+    }
+  }
+]
