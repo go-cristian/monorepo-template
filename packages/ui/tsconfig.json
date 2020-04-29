@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.spec.js",
+    "**/*.spec.ts"
+  ],
+  "exclude": [
+    "**/dist",
+    "node_modules",
+    "**/node_modules",
+    "**/__tests__",
+    "**/*.test.js",
+    "**/*.test.ts"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
+}
