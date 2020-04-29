@@ -1,0 +1,8 @@
+// tsconfig global project options - build or dev
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "noUnusedLocals": true
+  },
+  "include": ["**/.eslintrc.js"]
+}

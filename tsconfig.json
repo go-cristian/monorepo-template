@@ -1,0 +1,12 @@
+// Dev (not build) tsconfig
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@msco/ui": ["packages/ui/src/index.ts"],
+      "@msco/client": ["packages/client/src/index.ts"],
+      "@msco/server": ["packages/server/src/index.ts"]
+    }
+  }
+}
