@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [
+    "**/dist",
+    "node_modules",
+    "**/node_modules",
+    "**/*.spec.js",
+    "**/*.spec.ts",
+    "**/__tests__",
+    "**/*.test.js",
+    "**/*.test.ts"
+  ],
+  "references": [
+    {
+      "path": "../ui/tsconfig.json"
+    }
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "public",
+    "module": "commonjs",
+    "jsx": "react"
+  }
+}

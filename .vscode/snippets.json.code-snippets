@@ -1,0 +1,80 @@
+{
+  // Place your template-gatsby workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "TSX Block Component": {
+    "prefix": ["block", "blockcomponent"],
+    "description": "A regular React TSX Block Component.",
+    "body": [
+      "import React from 'react'",
+      "import styled from '@emotion/styled'\n",
+      "type Props = {",
+      "\tchildren: JSX.Element | JSX.Element[]",
+      "}\n",
+      "const Div = styled.div``\n",
+      "const ${1:name} = (props: Props): JSX.Element => {",
+      "\tconst { children } = props",
+      "\treturn (",
+      "\t\t<Div>",
+      "\t\t\t{children}",
+      "\t\t\t$0",
+      "\t\t</Div>",
+      "\t)",
+      "}\n",
+      "export default ${1:name}"
+    ]
+  },
+  "TSX View Component": {
+    "prefix": ["view", "viewcomponent"],
+    "description": "A regular React TSX Component.",
+    "body": [
+      "import React from 'react'",
+      "import styled from '@emotion/styled'\n",
+      "type Props = {",
+      "\t",
+      "}\n",
+      "const Div = styled.div``\n",
+      "const ${1:name} = (props: Props): JSX.Element => {",
+      "\treturn (",
+      "\t\t<Div>",
+      "\t\t\t$0",
+      "\t\t</Div>",
+      "\t)",
+      "}\n",
+      "export default ${1:name}"
+    ]
+  },
+  "Storybook Block": {
+    "prefix": ["storyblock"],
+    "description": "A regular Storybook React TSX Component.",
+    "body": [
+      "import React from 'react'",
+      "import { withKnobs, text } from '@storybook/addon-knobs'\n",
+      "import ${1:name} from './${1:name}'\n",
+      "export default {",
+      "\tcomponent: ${1:name},",
+      "\ttitle: '${1:name}',",
+      "\tdecorators: [withKnobs],",
+      "}\n",
+      "export const with${1:name} = (): JSX.Element => (",
+      "\t<${1:name}>",
+      "\t\t$0<h1>{text('Title', 'title')}</h1>",
+      "\t\t<p>{text('Description', 'description')}</p>",
+      "\t</${1:name}>",
+      ")"
+    ]
+  }
+}

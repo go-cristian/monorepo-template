@@ -1,0 +1,41 @@
+import React from 'react'
+import { withKnobs, text } from '@storybook/addon-knobs'
+
+import { title, description } from '../../utils/texts'
+import OneByOne from './OneByOne'
+
+export default {
+  component: OneByOne,
+  title: 'One By One',
+  decorators: [withKnobs],
+}
+
+export const oneByOne = (): JSX.Element => (
+  <OneByOne>
+    <div style={{ background: 'red' }}>
+      <h1>{text('Left Item Title', title)}</h1>
+      <p>{text('Left Item Content', description(50))}</p>
+    </div>
+    <div style={{ background: 'blue' }}>
+      <h1>{text('Right Item Title', title)}</h1>
+      <p>{text('Right Item Content', description(50))}</p>
+    </div>
+    <div>
+      <h1>{title}</h1>
+      <p>{description(50)}</p>
+    </div>
+  </OneByOne>
+)
+
+export const imageWithText = (): JSX.Element => (
+  <OneByOne>
+    <img
+      src="https://via.placeholder.com/600x600?text=Placeholder"
+      alt=""
+    />
+    <div>
+      <h1>{text('Right Item Title', title)}</h1>
+      <p>{text('Right Item Content', description(50))}</p>
+    </div>
+  </OneByOne>
+)

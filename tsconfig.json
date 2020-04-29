@@ -1,0 +1,37 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/ui/tsconfig.json"
+    },
+    {
+      "path": "packages/client/tsconfig.json"
+    },
+    {
+      "path": "packages/server/tsconfig.json"
+    }
+  ],
+  "compilerOptions": {
+    "lib": ["es6"],
+    "noUnusedLocals": true,
+    "composite": true,
+
+    // --- Build specific compilerOptions hencefort ---
+
+    "target": "es6",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+
+    // Important. Without this the compiler will complain it cannot find a referenced
+    // package during a build.
+    "moduleResolution": "node",
+
+    "baseUrl": ".",
+    "paths": {
+      "@msco/ui": ["packages/ui/src/index.ts"],
+      "@msco/client": ["packages/client/src/index.ts"],
+      "@msco/server": ["packages/server/src/index.ts"]
+    }
+  }
+}

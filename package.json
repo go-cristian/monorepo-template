@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "name": "iyubinest-starter",
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@types/jest": "25.2.3",
+    "@types/node": "14.0.5",
+    "@typescript-eslint/eslint-plugin": "3.0.0",
+    "@typescript-eslint/parser": "3.0.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-module-resolver": "4.0.0",
+    "concurrently": "5.2.0",
+    "eslint": "7.0.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-import-resolver-babel-module": "5.1.2",
+    "eslint-import-resolver-typescript": "2.0.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-flowtype": "5.1.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-module-resolver": "0.16.0",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react-hooks": "4.0.2",
+    "husky": "4.2.5",
+    "jest": "26.0.1",
+    "lerna": "3.21.0",
+    "ts-jest": "26.0.0",
+    "typescript": "3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint . --fix",
+      "git add"
+    ]
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "yarn cache clean && rm -rf yarn.lock && yarn workspace @msco/client gatsby clean && rm -rf node_modules && rm -rf packages/client/node_modules && rm -rf packages/client/.cache &&rm -rf packages/client/public && rm -rf packages/server/node_modules &&rm -rf packages/ui/node_modules && yarn",
+    "lint": "tsc && eslint 'packages/**/*.{js,ts,tsx}' --quiet --fix",
+    "ui": "yarn workspace @msco/ui",
+    "client": "yarn workspace @msco/client",
+    "server": "yarn workspace @msco/server",
+    "start": "concurrently --kill-others-on-fail \"yarn server start\"  \"yarn client start\""
+  }
+}
