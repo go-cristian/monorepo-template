@@ -40,7 +40,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "babel-preset-react-app": "9.1.2",
     "react-docgen-typescript-loader": "3.7.2",
-    "rollup": "2.10.5",
+    "rollup": "2.10.9",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-dts": "1.4.6",
