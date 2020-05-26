@@ -15,6 +15,7 @@ const Div = styled.div`
   ${media.sm`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
   `}
 
   ${media.md`

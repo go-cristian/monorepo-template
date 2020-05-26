@@ -8,11 +8,12 @@ type Props = {
 }
 
 const Wrapped = styled(Img)`
-
+  width: 100%;
+  height: 100%;
 `
 
 export const query = graphql`
-  query ImgQuery {
+  query BackgroundImgQuery {
     allFile {
       edges {
         node {
@@ -47,9 +48,6 @@ const Image = (props: Props): JSX.Element => (
         <Wrapped
           fluid={found}
           alt=""
-          objectFit="contain"
-          style={{ height: '100%' }}
-          imgStyle={{ objectFit: 'contain', height: '100%' }}
         />
       )
     }}

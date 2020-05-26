@@ -14,6 +14,8 @@ const Div = styled.div`
   width: 100%;
   height: auto;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 1;
 `
 

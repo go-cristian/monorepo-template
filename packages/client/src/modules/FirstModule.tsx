@@ -1,12 +1,16 @@
 import React from 'react'
+import styled from '@emotion/styled'
 import {
   Hero,
-  Grid,
   Navbar,
+  Grid,
+  Content,
+  Carousel,
+  Card,
   Backstage,
 } from '@msco/ui'
-import styled from '@emotion/styled'
-import Image from '../components/image/Image'
+
+import BackgroundImage from '../components/image/BackgroundImage'
 
 type Props = {
 
@@ -25,27 +29,29 @@ const FirstComponent = (props: Props): JSX.Element => (
     <Navbar type="SCROLL" contentId="hero">
       <NavContent />
     </Navbar>
-    <div id="hero">
-      <Hero>
-        <Backstage>
-          <Image name="hero.jpg" />
-        </Backstage>
-        <p>
-          Hello
-          {JSON.stringify(props)}
-        </p>
-      </Hero>
-    </div>
-    <Grid>
-      {[1, 2, 3, 4, 5, 6, 7].map((index) => (
-        <div key={index}>
-          <h1>
-            Hello
-            {index}
-          </h1>
-        </div>
-      ))}
-    </Grid>
+    <Hero id="hero">
+      <Backstage>
+        <Carousel>
+          <BackgroundImage name="hero.jpg" />
+          <BackgroundImage name="hero2.jpg" />
+        </Carousel>
+      </Backstage>
+      <p>
+        Hello 2as dasd
+        {JSON.stringify(props)}
+      </p>
+    </Hero>
+    <Content>
+      <Grid>
+        {[...Array(12)].map((_, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <Card key={index}>
+            <h1>Title</h1>
+            <p>Lorem something</p>
+          </Card>
+        ))}
+      </Grid>
+    </Content>
   </>
 )
 export default FirstComponent

@@ -16,6 +16,8 @@ const Div = styled.div<{ hide: boolean; height: number }>`
   display: block;
   transition: top 0.3s;
   top: ${({ hide, height }): string => (hide ? `-${height}px` : '0')};
+  right: 0;
+  left: 0;
   z-index: 1;
 `
 

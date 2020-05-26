@@ -33,6 +33,7 @@ const SlideItem = styled.div<{
   left: ${(props): string => `${props.left}px`};
   transition: all .5s;
   z-index: ${(props): string => `${props.z}`};
+  pointer-events: none
 `
 
 const OpacityItem = styled.div<{
@@ -43,6 +44,7 @@ const OpacityItem = styled.div<{
   height: 100%;
   opacity: ${({ opacity }): string => `${opacity}`};
   transition: all .5s;
+  pointer-events: none
 `
 
 type State = {

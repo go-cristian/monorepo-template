@@ -5,6 +5,8 @@ import React from 'react'
 import SEO, { Props as SEOProps } from '../seo/SEO'
 import Module, { Props as ModuleProps } from '../../modules/Modules'
 
+import './reset.css'
+
 export type Props = {
   seo: SEOProps;
   components: ModuleProps[];

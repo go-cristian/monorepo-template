@@ -17,13 +17,14 @@ const Div = styled.div<{top: number}>`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 0;
 `
 
 const Hero = ({ id, children }: Props): JSX.Element => {
   const ref = useRef<HTMLDivElement>(null)
   const [top, setTop] = useState(0)
   useEffect(() => {
-    const newTop = ref?.current?.getClientRects()[0].y || 0
+    const newTop = ref?.current?.offsetTop || 0
     setTop(newTop)
   }, [ref])
   return <Div id={id} ref={ref} top={top}>{children}</Div>

@@ -11,16 +11,13 @@ const Div = styled.div`
   position: relative;
   display: block;
   height: auto;
-  width: 100%;
+  width: calc(100% - 16);
   padding: 0;
+  margin: 16px;
 
   ${media.md`
-    margin: 0 auto;
-    width: 40rem;
-  `}
-
-  ${media.lg`
-    width: 80rem;
+    margin: 16px auto;
+    width: calc(1024px - 32px);
   `}
 `
 
