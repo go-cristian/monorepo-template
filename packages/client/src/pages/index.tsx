@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react'
 import { graphql } from 'gatsby'
+
 import Page, { Props as PageProps } from '../components/page/Page'
 
 type Props = {

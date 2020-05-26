@@ -9,11 +9,13 @@ export type Props = {
 
 const Div = styled.div`
   position: relative;
+  display: grid;
   height: auto;
   width: 100%;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
 
   ${media.sm`
-    display: grid;
     grid-template-columns: 1fr 1fr;
   `}
 

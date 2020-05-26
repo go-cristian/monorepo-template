@@ -2,9 +2,9 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 type Props = {
+  children: JSX.Element | JSX.Element[],
   open: boolean
   align?: 'left' | 'right'
-  onClose?(): void
 }
 
 const Div = styled.div<{visible: boolean}>`
@@ -41,12 +41,18 @@ const Container = styled.div<ContainerProps>`
 };
 `
 
-const Drawer = ({ open, align }: Props): JSX.Element => (
+const Drawer = ({
+  children,
+  open,
+  align,
+}: Props): JSX.Element => (
   <Div visible={open}>
     <Container
       visible={open}
       toRight={align === 'right'}
-    />
+    >
+      {children}
+    </Container>
   </Div>
 )
 

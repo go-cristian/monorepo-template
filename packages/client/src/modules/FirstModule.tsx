@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styled from '@emotion/styled'
 import {
   Hero,
-  Grid,
   Navbar,
+  Grid,
+  Content,
+  Carousel,
+  Drawer,
+  Card,
   Backstage,
 } from '@msco/ui'
-import styled from '@emotion/styled'
-import Image from '../components/image/Image'
+
+import BackgroundImage from '../components/image/BackgroundImage'
 
 type Props = {
 
@@ -20,32 +25,38 @@ const NavContent = styled.div`
   background: red;
 `
 
-const FirstComponent = (props: Props): JSX.Element => (
-  <>
-    <Navbar type="SCROLL" contentId="hero">
-      <NavContent />
-    </Navbar>
-    <div id="hero">
-      <Hero>
+const FirstComponent = (props: Props): JSX.Element => {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <Drawer open={open} />
+      <Navbar type="SCROLL" contentId="hero">
+        <NavContent onClick={() => setOpen(!open)} />
+      </Navbar>
+      <Hero id="hero">
         <Backstage>
-          <Image name="hero.jpg" />
+          <Carousel>
+            <BackgroundImage name="hero.jpg" />
+            <BackgroundImage name="hero2.jpg" />
+          </Carousel>
         </Backstage>
         <p>
-          Hello
+          Hello 2as dasd
           {JSON.stringify(props)}
         </p>
       </Hero>
-    </div>
-    <Grid>
-      {[1, 2, 3, 4, 5, 6, 7].map((index) => (
-        <div key={index}>
-          <h1>
-            Hello
-            {index}
-          </h1>
-        </div>
-      ))}
-    </Grid>
-  </>
-)
+      <Content>
+        <Grid>
+          {[...Array(12)].map((_, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+            <Card key={index}>
+              <h1>Title</h1>
+              <p>Lorem something</p>
+            </Card>
+          ))}
+        </Grid>
+      </Content>
+    </>
+  )
+}
 export default FirstComponent

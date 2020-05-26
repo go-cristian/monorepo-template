@@ -25,5 +25,6 @@
 
 # Build artifacts
 **/dist
+**/public
 **/build
 **/storybook-static

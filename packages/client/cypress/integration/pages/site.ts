@@ -2,8 +2,6 @@ export const base = 'http://localhost:8000'
 
 export const slugs = [
   '/',
-  '/page1',
-  '/page2',
 ]
 
 export const viewports = [

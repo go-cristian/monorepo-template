@@ -14,5 +14,8 @@ export const withDrawerClosed = (): JSX.Element => (
 )
 
 export const withDrawerOpen = (): JSX.Element => (
-  <Drawer open={boolean('Open', true)} />
+  <Drawer
+    open={boolean('Open', true)}
+    toRight
+  />
 )
