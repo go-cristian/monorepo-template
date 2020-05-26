@@ -11,10 +11,10 @@
     "graphql": "15.0.0"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.14.0",
-    "@graphql-codegen/introspection": "1.14.0",
-    "@graphql-codegen/typescript": "1.14.0",
-    "@graphql-codegen/typescript-operations": "1.14.0",
+    "@graphql-codegen/cli": "1.15.0",
+    "@graphql-codegen/introspection": "1.15.0",
+    "@graphql-codegen/typescript": "1.15.0",
+    "@graphql-codegen/typescript-operations": "1.15.0",
     "@types/webpack-env": "1.15.2",
     "clean-webpack-plugin": "3.0.0",
     "webpack": "4.43.0",
