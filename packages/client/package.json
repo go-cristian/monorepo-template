@@ -30,7 +30,7 @@
     "@types/react-helmet": "6.0.0",
     "@types/styled-components": "5.1.0",
     "babel-preset-gatsby-package": "0.4.2",
-    "cypress": "4.6.0",
+    "cypress": "4.7.0",
     "start-server-and-test": "1.11.0"
   },
   "scripts": {
