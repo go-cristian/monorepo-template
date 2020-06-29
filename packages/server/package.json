@@ -8,7 +8,7 @@
     "@apollo/gateway": "0.16.2",
     "apollo-server": "2.14.1",
     "dotenv": "8.2.0",
-    "graphql": "15.0.0"
+    "graphql": "15.2.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.15.0",
