@@ -40,7 +40,7 @@
     "babel-plugin-emotion": "10.0.33",
     "babel-plugin-styled-components": "1.10.7",
     "babel-preset-react-app": "9.1.2",
-    "cypress": "4.7.0",
+    "cypress": "4.9.0",
     "react-docgen-typescript-loader": "3.7.2",
     "rollup": "2.12.0",
     "rollup-plugin-babel": "4.4.0",

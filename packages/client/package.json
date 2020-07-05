@@ -31,7 +31,7 @@
     "@types/styled-components": "5.1.0",
     "babel-preset-gatsby": "^0.4.7",
     "babel-preset-gatsby-package": "0.4.2",
-    "cypress": "4.7.0",
+    "cypress": "4.9.0",
     "http-server": "^0.12.3",
     "start-server-and-test": "1.11.0"
   },
