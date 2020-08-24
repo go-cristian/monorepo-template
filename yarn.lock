@@ -7466,7 +7466,7 @@ babel-preset-gatsby-package@0.5.1:
     babel-plugin-dynamic-import-node "^2.3.3"
     core-js "^2.6.11"
 
-babel-preset-gatsby@^0.5.1:
+babel-preset-gatsby@0.5.1, babel-preset-gatsby@^0.5.1:
   version "0.5.1"
   resolved "https://registry.npmjs.org/babel-preset-gatsby/-/babel-preset-gatsby-0.5.1.tgz#c5847a2121a2670f2c84d4b82b82cff8e23c44d1"
   integrity sha512-YTq1U4QusTEo1LQXk893PVm6CNpIaqFjpvU/4azR9AyWqoMuABc96nXHJ1KtKnLnEWFjRdfNA5XeCOrG9y7AFA==
@@ -14385,9 +14385,9 @@ http-proxy@^1.17.0, http-proxy@^1.18.0, http-proxy@^1.18.1:
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
-http-server@^0.12.3:
+http-server@0.12.3:
   version "0.12.3"
-  resolved "https://registry.npmjs.org/http-server/-/http-server-0.12.3.tgz#ba0471d0ecc425886616cb35c4faf279140a0d37"
+  resolved "https://registry.yarnpkg.com/http-server/-/http-server-0.12.3.tgz#ba0471d0ecc425886616cb35c4faf279140a0d37"
   integrity sha512-be0dKG6pni92bRjq0kvExtj/NrrAd28/8fCXkaI/4piTwQMSDSLMhWyW0NI1V+DBI3aa1HMlQu46/HjVLfmugA==
   dependencies:
     basic-auth "^1.0.3"
