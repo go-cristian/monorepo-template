@@ -4,10 +4,10 @@
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
-    "@emotion/core": "10.0.28",
-    "@emotion/styled": "10.0.27",
+    "@emotion/core": "10.3.1",
+    "@emotion/styled": "10.3.0",
     "@msco/ui": "0.0.1",
-    "babel-plugin-emotion": "10.0.33",
+    "babel-plugin-emotion": "10.2.2",
     "contentful-cli": "^1.4.17",
     "dotenv": "8.2.0",
     "gatsby": "2.23.20",
