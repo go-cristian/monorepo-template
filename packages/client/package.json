@@ -29,7 +29,7 @@
     "@types/react": "16.9.41",
     "@types/react-dom": "16.9.8",
     "@types/react-helmet": "6.0.0",
-    "@types/styled-components": "5.1.0",
+    "@types/styled-components": "5.1.34",
     "babel-preset-gatsby": "^0.5.1",
     "babel-preset-gatsby-package": "0.5.1",
     "cypress": "4.9.0",
