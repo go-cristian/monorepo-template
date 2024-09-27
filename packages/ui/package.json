@@ -42,7 +42,7 @@
     "babel-preset-react-app": "9.1.2",
     "cypress": "4.9.0",
     "react-docgen-typescript-loader": "3.7.2",
-    "rollup": "2.18.2",
+    "rollup": "2.79.2",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-dts": "1.4.7",
